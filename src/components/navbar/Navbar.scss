@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 50px;
+
+  &__logo {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 15px;
+    font-size: 20px;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    & a {
+      color: $text;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+  &__nav {
+    margin-bottom: 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: $text;
+    & a {
+      padding: 10px;
+      margin-right: auto;
+      color: $text;
+      text-decoration: none;
+      background-color: transparent;
+      &:hover {
+        background-color: $skyblue;
+      }
+    }
+  }
+}

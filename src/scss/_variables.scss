@@ -1,0 +1,26 @@
+// Variables
+$text: #fff;
+$steelblue: steelblue;
+$skyblue: skyblue;
+$imgBorder: purple;
+$darkcyan: darkcyan;
+$rebeccapurple: rebeccapurple;
+$sienna: sienna;
+
+// Media
+@mixin screen($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin tablet($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+@mixin mobile($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

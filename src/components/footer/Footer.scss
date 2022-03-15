@@ -1,0 +1,32 @@
+@import "../../scss/variables";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  &__copyright {
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+
+    & a {
+      color: $text;
+      text-decoration: none;
+    }
+  }
+  &__social {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-decoration: none;
+    color: $text;
+    & a {
+      padding: 10px;
+      color: $text;
+      text-decoration: none;
+    }
+  }
+}
