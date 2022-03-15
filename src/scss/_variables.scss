@@ -8,6 +8,11 @@ $rebeccapurple: rebeccapurple;
 $sienna: sienna;
 
 // Media
+@mixin desktop($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
 @mixin screen($width) {
   @media (max-width: $width) {
     @content;

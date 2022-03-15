@@ -6,7 +6,7 @@ const Footer = (): React.ReactElement => {
   return (
     <div className="footer">
       <div className="footer__copyright">
-        <a href="/">© 2022 Copyright</a>
+        <a href="/">© 2022 Testimonials App. All rights reserved.</a>
       </div>
       <div className="footer__social">
         <a href="/">

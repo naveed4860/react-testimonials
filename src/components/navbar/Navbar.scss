@@ -16,27 +16,52 @@
     line-height: inherit;
     white-space: nowrap;
     text-decoration: none;
-    background-color: transparent;
     & a {
       color: $text;
       text-decoration: none;
-      background-color: transparent;
     }
   }
   &__nav {
-    margin-bottom: 0;
-    text-decoration: none;
-    background-color: transparent;
-    color: $text;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+      margin-bottom: 0;
+      text-decoration: none;
+      color: $text;
+    }
     & a {
       padding: 10px;
       margin-right: auto;
       color: $text;
+      cursor: pointer;
       text-decoration: none;
-      background-color: transparent;
+
       &:hover {
         background-color: $skyblue;
+        border-radius: 10px;
       }
+    }
+  }
+  &__bars {
+    display: none;
+    color: $text;
+  }
+}
+
+@include tablet(768px) {
+  .navbar {
+    &__nav {
+      &__menu {
+        display: none;
+      }
+    }
+    &__bars {
+      display: block;
+      color: $text;
+      cursor: pointer;
     }
   }
 }

@@ -82,7 +82,7 @@
   }
 }
 
-@include screen(1280px) {
+@include desktop(1280px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -100,7 +100,7 @@
     }
   }
 }
-@include tablet(1024px) {
+@include screen(1024px) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -118,7 +118,7 @@
     }
   }
 }
-@include mobile(768px) {
+@include tablet(768px) {
   .testimonials {
     grid-template-columns: 1fr;
     width: 100%;

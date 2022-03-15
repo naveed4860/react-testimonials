@@ -9,12 +9,16 @@ const Navbar = (): React.ReactElement => {
         <a href="/">Logo</a>
       </div>
       <div className="navbar__nav">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Portfolio</a>
-        <a href="/">Contact</a>
-        <a href="/">Login</a>
-        <a href="/">Register</a>
+        <div className="navbar__nav__menu">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/testimonials">Testimonials</a>
+          <a href="/">Login</a>
+          <a href="/">Register</a>
+        </div>
+        <div className="navbar__bars">
+          <i className="fa-solid fa-bars"></i>
+        </div>
       </div>
     </div>
   );
