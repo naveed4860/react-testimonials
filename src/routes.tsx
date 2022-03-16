@@ -1,6 +1,8 @@
 import Home from "./pages/home/Index";
 import About from "./pages/about/Index";
-import Testimonials from "./components/testimonials/Testimonials";
+import Testimonials from "./pages/testimonials/Index";
+import Login from "./pages/login/Index";
+import Register from "./pages/register/Index";
 
 export interface IRoute {
   title: string;
@@ -26,6 +28,18 @@ export const routes: IRoute[] = [
     title: "Testimonials",
     path: "/testimonials",
     page: <Testimonials />,
+    exact: true,
+  },
+  {
+    title: "Login",
+    path: "/login",
+    page: <Login />,
+    exact: true,
+  },
+  {
+    title: "Register",
+    path: "/register",
+    page: <Register />,
     exact: true,
   },
 ];

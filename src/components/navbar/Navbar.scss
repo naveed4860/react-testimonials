@@ -45,9 +45,47 @@
       }
     }
   }
+
+  &__navopen {
+    display: flex;
+    flex-direction: column;
+
+    &__menu {
+      margin-bottom: 0;
+      text-decoration: none;
+      color: $text;
+    }
+    & a {
+      display: block;
+      padding: 10px;
+      margin: 5px;
+      color: $text;
+      cursor: pointer;
+      text-decoration: none;
+      border-bottom: 1px solid $skyblue;
+      transition: transform 0.3s ease-out;
+      &:hover {
+        background-color: $skyblue;
+      }
+    }
+  }
+
   &__bars {
     display: none;
     color: $text;
+  }
+  .open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 200px;
+    height: 100%;
+    transition: transform 0.3s ease-out;
+    background-color: $steelblue;
+    margin-top: 50px;
+    padding: 0 20px;
   }
 }
 

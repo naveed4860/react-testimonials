@@ -1,18 +1,25 @@
-import React from "react";
+import { ReactElement, useState } from "react";
+
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 
 import "./Layout.scss";
 
 type LayoutProps = {
-  children: React.ReactElement;
+  children: ReactElement;
 };
 
-const Layout = ({ children }: LayoutProps): React.ReactElement => {
+const Layout = ({ children }: LayoutProps): ReactElement => {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
   return (
     <div className="container">
       <header>
-        <Navbar />
+        <Navbar isOpen={showSidebar} toggleSidebar={toggleSidebar} />
       </header>
       <main>{children}</main>
       <footer>
